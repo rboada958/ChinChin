@@ -37,7 +37,7 @@ data class DataItem(
     val qa: String? = null,
 
     @Json(name = "cs")
-    val cs: Int? = null,
+    val cs: Long? = null,
 
     @Json(name = "q")
     val Q: String? = null,

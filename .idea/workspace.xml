@@ -10,7 +10,15 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58605c2e-eb10-4730-bd17-b070472c0058" name="Default Changelist" comment="" />
+    <list default="true" id="58605c2e-eb10-4730-bd17-b070472c0058" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/chinchinapp/chinchin/app/models/DataItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/chinchinapp/chinchin/app/models/DataItem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/chinchinapp/chinchin/ui/qr/QrFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/chinchinapp/chinchin/ui/qr/QrFragment.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +45,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ex9Kqo04W9QVzyjhRKkLWyEMJz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -45,8 +56,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
   <component name="RecentsManager">
@@ -179,22 +191,22 @@
     </state>
     <state x="-1271" y="170" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1360.728@-1920.0.1920.1040" timestamp="1595271314306" />
     <state x="460" y="119" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1360.728@0.0.1360.728" timestamp="1595252763527" />
-    <state width="1354" height="652" key="GridCell.Tab.0.bottom" timestamp="1595292881281">
+    <state width="1354" height="652" key="GridCell.Tab.0.bottom" timestamp="1595295161703">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1354" height="652" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1360.728@-1920.0.1920.1040" timestamp="1595292881281" />
-    <state width="1354" height="652" key="GridCell.Tab.0.center" timestamp="1595292881280">
+    <state width="1354" height="652" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1360.728@-1920.0.1920.1040" timestamp="1595295161703" />
+    <state width="1354" height="652" key="GridCell.Tab.0.center" timestamp="1595295161702">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1354" height="652" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1360.728@-1920.0.1920.1040" timestamp="1595292881280" />
-    <state width="1354" height="652" key="GridCell.Tab.0.left" timestamp="1595292881280">
+    <state width="1354" height="652" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1360.728@-1920.0.1920.1040" timestamp="1595295161702" />
+    <state width="1354" height="652" key="GridCell.Tab.0.left" timestamp="1595295161701">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1354" height="652" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1360.728@-1920.0.1920.1040" timestamp="1595292881280" />
-    <state width="1354" height="652" key="GridCell.Tab.0.right" timestamp="1595292881281">
+    <state width="1354" height="652" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1360.728@-1920.0.1920.1040" timestamp="1595295161701" />
+    <state width="1354" height="652" key="GridCell.Tab.0.right" timestamp="1595295161702">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1354" height="652" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1360.728@-1920.0.1920.1040" timestamp="1595292881281" />
+    <state width="1354" height="652" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1360.728@-1920.0.1920.1040" timestamp="1595295161702" />
     <state x="0" y="0" width="1376" height="815" key="dock-window-1" timestamp="1595278196620">
       <screen x="0" y="0" width="1360" height="728" />
     </state>

@@ -83,10 +83,6 @@ class QrFragment : BaseFragment(), QrController.CallbacksListener {
         viewModel.cryptoAll.observe(viewLifecycleOwner, Observer {
             if (it != null) {
                 controller = QrController(it, this)
-                val llm = LinearLayoutManager(context)
-                llm.orientation = LinearLayoutManager.VERTICAL
-                rv_crypto.layoutManager = llm
-                rv_crypto.setHasFixedSize(true)
                 rv_crypto_all.setControllerAndBuildModels(controller!!)
             }
         })
