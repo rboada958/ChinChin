@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">ChinChin</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Pago ChinChin</string>
+    <string name="nav_header_subtitle">pagochinchin.com/</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="connectivity_exception">No connectivity exception</string>
+    <string name="try_again">An error has occurred, try again later.</string>
+    <string name="no_internet">Check your internet connection and try again.</string>
+    <string name="unknown_error">Oops, something wrong happened.</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_qr">QR</string>
+    <string name="menu_logout">Logout</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="text_verify_pass">Password must contain at least 5 characters - 1 Capital letter and 1 Special character</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="text_sign_in">Login</string>
+    <string name="text_following_information">Please fill the following information to continue</string>
+    <string name="text_required_email">Enter a vaild email</string>
+    <string name="text_required_password">Enter a password</string>
+    <string name="text_enter_amount">Enter amount to convert</string>
+    <string name="text_hint">0.00</string>
+    <string name="text_amount">Amount</string>
+    <string name="text_btc">Bitcoins</string>
+    <string name="text_select_coin">Select coin</string>
+    <string name="text_exchange">Exchange rate</string>
+    <string name="text_final_amount">Final amount</string>
+    <string name="text_qr_code">Qr code</string>
+    <string name="text_currency">Currency</string>
+</resources>

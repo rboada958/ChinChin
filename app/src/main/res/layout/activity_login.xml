@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.chinchinapp.chinchin.ui.login.mvvm.LoginViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".ui.login.LoginActivity">
+
+        <ImageView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/din_bold"
+            android:background="@drawable/chinchin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/din_light"
+            android:gravity="center"
+            android:text="@string/text_following_information"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:textColorHint="@color/colorWhite"
+            app:hintTextAppearance="@style/Hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <EditText
+                mutableTextWatcher="@{viewModel.emailTextWatcher()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="48dp"
+                android:ems="10"
+                android:fontFamily="@font/din_regular"
+                android:hint="@string/prompt_email"
+                android:inputType="text"
+                android:padding="20dp"
+                android:text="@{viewModel.emailValue}"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="18sp"
+                android:theme="@style/CustomEditText"
+                tools:ignore="Autofill,LabelFor"
+                tools:text="boadaromel@gmail.com" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInpuntLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/colorWhite"
+            app:hintTextAppearance="@style/Hint"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+            app:passwordToggleDrawable="@drawable/show_password"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorWhite"
+            tools:layout_editor_absoluteX="16dp">
+
+            <EditText
+                mutableTextWatcher="@{viewModel.passwordTextWatcher()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="48dp"
+                android:ems="10"
+                android:fontFamily="@font/din_regular"
+                android:hint="@string/prompt_password"
+                android:inputType="textPassword"
+                android:padding="20dp"
+                android:text="@{viewModel.passwordValue}"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="18sp"
+                android:theme="@style/CustomEditText"
+                tools:ignore="Autofill,LabelFor"
+                tools:text="@string/app_name" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:alpha="0.1"
+            android:background="@drawable/background_button"
+            android:fontFamily="@font/din_bold"
+            android:onClick="@{() -> viewModel.login()}"
+            android:paddingHorizontal="40dp"
+            android:text="@string/text_sign_in"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInpuntLayout2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
