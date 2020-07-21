@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.chinchinapp.chinchin.ui.qr.mvvm.QrViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack"
+        tools:context=".ui.qr.QrFragment">
+
+        <com.airbnb.epoxy.EpoxyRecyclerView
+            android:id="@+id/rv_crypto_all"
+            mutableVisibility="@{viewModel.mutableVisibility}"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            mutableVisibility="@{viewModel.mutableVisibilityExchange}"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/background_card"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/din_light"
+                android:gravity="center"
+                android:paddingVertical="5dp"
+                android:text="@string/text_amount"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorBlackGray"
+                android:fontFamily="@font/din_light"
+                android:gravity="center"
+                android:paddingVertical="5dp"
+                android:text="@{viewModel.amount}"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+                tools:text="0.617949813 BTC" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/din_light"
+                android:gravity="center"
+                android:paddingVertical="5dp"
+                android:text="@string/text_currency"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorBlackGray"
+                android:fontFamily="@font/din_light"
+                android:gravity="center"
+                android:paddingVertical="5dp"
+                android:text="@{viewModel.currency}"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+                tools:text="0.617949813 BTC" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/din_light"
+                android:gravity="center"
+                android:paddingVertical="5dp"
+                android:text="@string/text_exchange"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorBlackGray"
+                android:fontFamily="@font/din_light"
+                android:gravity="center"
+                android:paddingVertical="5dp"
+                android:text="@{viewModel.exchange}"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+                tools:text="0.617949813 BTC" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/din_light"
+                android:gravity="center"
+                android:paddingVertical="5dp"
+                android:text="@string/text_final_amount"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorBlackGray"
+                android:fontFamily="@font/din_light"
+                android:gravity="center"
+                android:paddingVertical="5dp"
+                android:text="@{viewModel.totalAmount}"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+                tools:text="0.617949813 BTC" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/din_light"
+                android:gravity="center"
+                android:paddingVertical="5dp"
+                android:text="@string/text_qr_code"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/qr_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp"
+                android:contentDescription="@string/app_name"
+                tools:src="@drawable/ic_btc" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            mutableVisibility="@{viewModel.mutableProgress}"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
